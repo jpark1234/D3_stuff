@@ -1,0 +1,694 @@
+
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href="css/nvd3.css">
+    
+    <script src='js/jquerymin.js' type='text/javascript'></script>
+    <script src='js/d3v3min.js' type='text/javascript'></script>
+    <script src='js/nvd3.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1000px;
+      height: 600px;
+    }  
+    </style>
+    <h1 align="center">Jeeyoon Park (JP3380) Interactive Visualization</h1> 
+    <h1 align="center">US Open Mens' Data 2003-2013</h1> 
+    <h2 align="center">Proportion of Games Played Grouped by Continents</h2>
+    <p align="center">How did players from each continent perform each year?</p> 
+    <p align="center">A higher proportion indicates more games played by players of that continent.</p> 
+    <p align="center">Try selecting for different types of layout (bar graph or stacked) and specific continents only by playing with the buttons in the legend.</p>
+   </head>
+  <body>
+    <div id='chart6245a93628e' class='rChart nvd3'></div>  
+    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart6245a93628e()
+    });
+    function drawchart6245a93628e(){  
+      var opts = {
+ "dom": "chart6245a93628e",
+"width":    1000,
+"height":    600,
+"x": "Year",
+"y": "Percentage",
+"group": "Continent",
+//"group":////////"Players",
+"type": "multiBarChart",
+"id": "chart6245a93628e" 
+},
+        
+        data = [
+ {
+  "Year": "2003",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2003",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 0.393700787,
+  },
+ 
+   {
+  "Year": "2003",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 2.362204724,
+  },
+   {
+  "Year": "2003",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 2.362204724,
+  },
+  {
+  "Year": "2003",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 10.23622047,
+  },
+    {
+  "Year": "2003",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 12.20472441,
+  },
+    {
+  "Year": "2003",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 16.14173228,
+  },
+    {
+  "Year": "2003",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 24.80314961,
+  },
+    {
+  "Year": "2003",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 31.49606299,
+  },
+ {
+  "Year": "2004",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2004",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 0.793650794,
+  },
+ 
+   {
+  "Year": "2004",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 2.777777778,
+  },
+   {
+  "Year": "2004",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 2.777777778,
+  },
+  {
+  "Year": "2004",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 9.523809524,
+  },
+    {
+  "Year": "2004",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 9.523809524,
+  },
+    {
+  "Year": "2004",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 11.50793651,
+  },
+    {
+  "Year": "2004",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 24.6031746,
+  },
+    {
+  "Year": "2004",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 38.49206349,
+  },
+   {
+  "Year": "2005",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2005",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 0,
+  },
+ 
+   {
+  "Year": "2005",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 1.704545455,
+  },
+   {
+  "Year": "2005",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 3.409090909,
+  },
+  {
+  "Year": "2005",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 9.659090909,
+  },
+    {
+  "Year": "2005",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 8.522727273,
+  },
+    {
+  "Year": "2005",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 18.18181818,
+  },
+    {
+  "Year": "2005",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 29.54545455,
+  },
+    {
+  "Year": "2005",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 28.97727273,
+  },
+ {
+  "Year": "2006",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2006",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 0,
+  },
+ 
+   {
+  "Year": "2006",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 1.807228916,
+  },
+   {
+  "Year": "2006",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 1.204819277,
+  },
+  {
+  "Year": "2006",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 12.04819277,
+  },
+    {
+  "Year": "2006",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 10.24096386,
+  },
+    {
+  "Year": "2006",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 19.87951807,
+  },
+    {
+  "Year": "2006",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 24.69879518,
+  },
+    {
+  "Year": "2006",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 30.12048193,
+  },
+   {
+  "Year": "2007",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2007",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage":0.869565217,
+  },
+ 
+   {
+  "Year": "2007",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 1.739130435,
+  },
+   {
+  "Year": "2007",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 3.043478261,
+  },
+  {
+  "Year": "2007",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 9.130434783,
+  },
+    {
+  "Year": "2007",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 6.52173913,
+  },
+    {
+  "Year": "2007",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 13.91304348,
+  },
+    {
+  "Year": "2007",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 33.47826087,
+  },
+    {
+  "Year": "2007",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 31.30434783,
+  },
+ {
+  "Year": "2008",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2008",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 1.968503937,
+  },
+ 
+   {
+  "Year": "2008",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 0.393700787,
+  },
+   {
+  "Year": "2008",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 4.330708661,
+  },
+  {
+  "Year": "2008",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 12.20472441,
+  },
+    {
+  "Year": "2008",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 7.086614173,
+  },
+    {
+  "Year": "2008",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 14.17322835,
+  },
+    {
+  "Year": "2008",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 33.07086614,
+  },
+    {
+  "Year": "2008",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 26.77165354,
+  },
+   {
+  "Year": "2009",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2009",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 1.57480315,
+  },
+ 
+   {
+  "Year": "2009",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 0,
+  },
+   {
+  "Year": "2009",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 3.149606299,
+  },
+  {
+  "Year": "2009",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 10.62992126,
+  },
+    {
+  "Year": "2009",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 7.480314961,
+  },
+    {
+  "Year": "2009",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 12.99212598,
+  },
+    {
+  "Year": "2009",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 30.70866142,
+  },
+    {
+  "Year": "2009",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 33.46456693,
+  },
+   {
+  "Year": "2010",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0.787401575,
+  },
+
+  {
+  "Year": "2010",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 1.181102362,
+  },
+ 
+   {
+  "Year": "2010",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 0,
+  },
+   {
+  "Year": "2010",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 2.362204724,
+  },
+  {
+  "Year": "2010",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 11.41732283,
+  },
+    {
+  "Year": "2010",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 6.299212598,
+  },
+    {
+  "Year": "2010",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 11.02362205,
+  },
+    {
+  "Year": "2010",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 31.49606299,
+  },
+    {
+  "Year": "2010",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 35.43307087,
+  },
+   {
+  "Year": "2011",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2011",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 1.968503937,
+  },
+ 
+   {
+  "Year": "2011",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 0.393700787,
+  },
+   {
+  "Year": "2011",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 4.330708661,
+  },
+  {
+  "Year": "2011",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 12.20472441,
+  },
+    {
+  "Year": "2011",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 7.874015748,
+  },
+    {
+  "Year": "2011",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 11.81102362,
+  },
+    {
+  "Year": "2011",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 32.28346457,
+  },
+    {
+  "Year": "2011",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 29.13385827,
+  },
+   {
+  "Year": "2012",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0,
+  },
+
+  {
+  "Year": "2012",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 0.396825397,
+  },
+ 
+   {
+  "Year": "2012",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 1.587301587,
+  },
+   {
+  "Year": "2012",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 5.158730159,
+  },
+  {
+  "Year": "2012",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 8.333333333,
+  },
+    {
+  "Year": "2012",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 7.936507937,
+  },
+    {
+  "Year": "2012",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 16.26984127,
+  },
+    {
+  "Year": "2012",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 28.17460317,
+  },
+    {
+  "Year": "2012",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 32.14285714,
+  },
+   {
+  "Year": "2013",
+  "Continent": "Australia",
+  "Freq":1,
+  "Percentage": 0.396825397,
+  },
+
+  {
+  "Year": "2013",
+  "Continent": "North America",
+  "Freq":1,
+  "Percentage": 1.19047619,
+  },
+ 
+   {
+  "Year": "2013",
+  "Continent": "Africa",
+  "Freq":1,
+  "Percentage": 0.793650794,
+  },
+   {
+  "Year": "2013",
+  "Continent": "Northern Europe",
+  "Freq":1,
+  "Percentage": 5.158730159,
+  },
+  {
+  "Year": "2013",
+  "Continent": "Asia",
+  "Freq":1,
+  "Percentage": 11.9047619,
+  },
+    {
+  "Year": "2013",
+  "Continent": "South America",
+  "Freq":1,
+  "Percentage": 6.746031746,
+  },
+    {
+  "Year": "2013",
+  "Continent": "Middle East",
+  "Freq":1,
+  "Percentage": 10.71428571,
+  },
+    {
+  "Year": "2013",
+  "Continent": "Western Europe",
+  "Freq":1,
+  "Percentage": 29.76190476,
+  },
+    {
+  "Year": "2013",
+  "Continent": "Eastern Europe",
+  "Freq":1,
+  "Percentage": 33.33333333,
+  }
+]
+      var data = d3.nest()
+        .key(function(d){
+          return opts.group === undefined ? 'main' : d[opts.group]
+        })
+        .entries(data)
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+                
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+ 
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+  </body>
+</html>
